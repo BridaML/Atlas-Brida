@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual de Comunicación Organizacional Multilingüe e Intercultural</title>
+  <style>
+    :root {
+      --black: #111111;
+      --ink: #1f1f1f;
+      --gray-900: #2b2b2b;
+      --gray-700: #555555;
+      --gray-500: #8a8a8a;
+      --gray-300: #d9d9d9;
+      --gray-200: #eeeeee;
+      --gray-100: #f7f7f7;
+      --white: #ffffff;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Helvetica, Arial, sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.65;
+      letter-spacing: -0.01em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+      color: var(--black);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      line-height: 1.03;
+      letter-spacing: -0.045em;
+    }
+
+    h1 {
+      font-size: clamp(3.4rem, 8vw, 7.8rem);
+      max-width: 980px;
+    }
+
+    h2 {
+      font-size: clamp(2.3rem, 5vw, 4.9rem);
+    }
+
+    h3 {
+      font-size: clamp(1.55rem, 3vw, 2.55rem);
+    }
+
+    h4 {
+      font-family: Inter, Helvetica, Arial, sans-serif;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin: 0 0 1rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin: 0.32rem 0;
+    }
+
+    .page {
+      width: min(var(--max-width), 92vw);
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      align-items: end;
+      padding: 4.8rem 0;
+      border-bottom: 1px solid var(--black);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 5rem;
+      align-items: end;
+    }
+
+    .eyebrow {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--gray-700);
+      margin-bottom: 1.4rem;
+    }
+
+    .hero-text {
+      max-width: 760px;
+      margin-top: 2rem;
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      color: var(--gray-700);
+    }
+
+    .toc {
+      border: 1px solid var(--black);
+      padding: 2rem;
+      background: var(--white);
+    }
+
+    .toc-title {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .toc ol {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      counter-reset: toc;
+    }
+
+    .toc li {
+      counter-increment: toc;
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      gap: 0.7rem;
+      padding: 0.76rem 0;
+      border-top: 1px solid var(--gray-300);
+      font-size: 0.94rem;
+      line-height: 1.35;
+    }
+
+    .toc li::before {
+      content: counter(toc, decimal-leading-zero);
+      color: var(--gray-500);
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      padding-top: 0.15rem;
+    }
+
+    section {
+      padding: 6.5rem 0;
+      border-bottom: 1px solid var(--gray-300);
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 230px 1fr;
+      gap: 4.5rem;
+      margin-bottom: 3.6rem;
+    }
+
+    .module-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gray-500);
+      padding-top: 0.65rem;
+    }
+
+    .lead {
+      max-width: 900px;
+      margin-top: 1.3rem;
+      color: var(--gray-700);
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      line-height: 1.55;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.2rem;
+    }
+
+    .card {
+      border: 1px solid var(--black);
+      padding: 1.55rem;
+      background: var(--white);
+    }
+
+    .card.soft {
+      background: var(--gray-100);
+      border-color: var(--gray-300);
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+    }
+
+    .card p,
+    .card li,
+    .meta {
+      color: var(--gray-700);
+      font-size: 0.96rem;
+    }
+
+    .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.05rem;
+      height: 2.05rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--black);
+      border-radius: 50%;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.15rem;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--gray-300);
+      background: var(--white);
+      padding: 0.35rem 0.6rem;
+      font-size: 0.75rem;
+      color: var(--gray-700);
+      line-height: 1.2;
+    }
+
+    .quote {
+      margin: 2rem 0;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--black);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1rem, 2vw, 1.8rem);
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.7rem;
+      font-size: 0.91rem;
+    }
+
+    th,
+    td {
+      border: 1px solid var(--gray-300);
+      padding: 0.85rem;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      background: var(--gray-100);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    td {
+      color: var(--gray-700);
+    }
+
+    .block-title {
+      margin: 4rem 0 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--gray-300);
+    }
+
+    .email-box,
+    .prompt-box {
+      border: 1px solid var(--black);
+      padding: 1.25rem;
+      white-space: pre-line;
+      background: var(--white);
+      font-size: 0.9rem;
+      color: var(--gray-900);
+      min-height: 100%;
+    }
+
+    .email-box::before,
+    .prompt-box::before {
+      display: block;
+      margin-bottom: 0.9rem;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      color: var(--gray-500);
+      font-weight: 800;
+    }
+
+    .email-box::before {
+      content: "MODELO DE COMUNICACIÓN";
+    }
+
+    .prompt-box::before {
+      content: "PLANTILLA DE PROMPT";
+    }
+
+        .proposal-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:1.2rem;
+      margin-top:2rem;
+    }
+
+    .proposal-card{
+      border:1px solid var(--black);
+      padding:1.4rem;
+      background:var(--white);
+    }
+
+    .proposal-card h4{
+      border-bottom:1px solid var(--gray-300);
+      padding-bottom:.8rem;
+    }
+
+    .proposal-card .mini-title{
+      display:block;
+      margin:1.1rem 0 .35rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:.06em;
+      font-size:.75rem;
+      color:var(--gray-700);
+    }
+
+    .split-line {
+      height: 1px;
+      background: var(--gray-300);
+      margin: 2.5rem 0;
+    }
+
+    .footer {
+      padding: 4rem 0;
+      color: var(--gray-700);
+      font-size: 0.9rem;
+    }
+
+    .link-institutional {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 1px solid #111;
+    padding-bottom: 2px;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.link-institutional:hover {
+    color: #555;
+    border-bottom-color: #555;
+}
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .section-head,
+      .grid-2,
+      .grid-3,
+      .proposal-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 4rem 0;
+      }
+
+      .section-head {
+        gap: 1.2rem;
+      }
+
+      section {
+        padding: 4.4rem 0;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero page" id="inicio">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">CAPFISCAL CONSULTING LATAM · INCANEXO</div>
+        <h1>Manual de Comunicación Organizacional Multilingüe e Intercultural</h1>
+        <p class="hero-text">
+          Documento rector para unificar la comunicación externa, fortalecer la coherencia narrativa y adaptar los mensajes institucionales a audiencias estratégicas entre Europa y Latinoamérica.
+        </p>
+      </div>
+
+      <nav class="toc" aria-label="Tabla de contenido">
+        <div class="toc-title">Tabla de contenido</div>
+        <ol>
+          <li><a href="#introduccion">Introducción</a></li>
+          <li><a href="#modulo-i">Módulo I — Segmentación de Audiencias Estratégicas</a></li>
+          <li><a href="#buyer-1">Buyer Persona N°1: Inversionista Europeo Estratégico</a></li>
+          <li><a href="#buyer-2">Buyer Persona N°2: Empresa y PyMEs Exportadoras</a></li>
+          <li><a href="#buyer-3">Buyer Persona N°3: Aliados y Ecosistema Estratégico</a></li>
+          <li><a href="#modulo-ii">Módulo II — Narrativa Institucional Estratégica</a></li>
+          <li><a href="#adaptacion">Adaptación por Audiencia</a></li>
+          <li><a href="#modulo-iii">Módulo III — Lineamientos de Comunicación por Canal</a></li>
+          <li><a href="#glosario">Glosario Estratégico</a></li>
+          <li><a href="#prompts">Plantillas de Prompts para Comunicación Institucional</a></li>
+          <li><a href="#validacion">Validación y Aprobación</a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section id="introduccion">
+      <div class="section-head">
+        <div class="module-label">Introducción</div>
+        <div>
+          <h2>Marco rector de comunicación externa</h2>
+          <p class="lead">
+            CAPFISCAL CONSULTING LATAM e INCANEXO son organizaciones hermanas que trabajan de manera articulada en procesos de consultoría internacional, comercio exterior, inversión y relacionamiento empresarial entre Europa y Latinoamérica.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <p>
+            Este manual establece criterios unificados para garantizar coherencia narrativa, adaptación intercultural y claridad institucional frente a audiencias diversas. Su propósito es orientar la elaboración de comunicaciones externas con un lenguaje profesional, estratégico y culturalmente pertinente.
+          </p>
+          <p>
+            El documento adopta el enfoque de buyer persona institucional como representación estratégica de las principales audiencias. Cada perfil integra variables corporativas, culturales, lingüísticas y comunicacionales que influyen en la forma en que cada segmento percibe e interpreta la comunicación organizacional.
+          </p>
+        </div>
+        <div class="card soft">
+          <h4>Aplicación práctica</h4>
+          <ul>
+            <li>Mantener coherencia narrativa entre canales y audiencias.</li>
+            <li>Adaptar tono, lenguaje y nivel técnico según el receptor.</li>
+            <li>Fortalecer el posicionamiento institucional.</li>
+            <li>Garantizar consistencia cultural y lingüística en español e inglés.</li>
+            <li>Usar ejemplos, plantillas y prompts como herramientas de apoyo operativo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="modulo-i">
+      <div class="section-head">
+        <div class="module-label">Módulo I</div>
+        <div>
+          <h2>Segmentación de Audiencias Estratégicas</h2>
+          <p class="lead">
+            La comunicación institucional se organiza alrededor de tres perfiles estratégicos: inversionistas europeos, empresas latinoamericanas exportadoras y aliados institucionales del ecosistema empresarial.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <article class="card" id="buyer-1">
+          <span class="number">01</span>
+          <h3>Inversionista Europeo Estratégico</h3>
+          <p class="meta">
+            Inversionistas privados, family offices, fondos de capital, holdings, multinacionales y perfiles corporativos interesados en oportunidades de expansión, nearshoring, energía, comercio exterior, compliance y estructuración empresarial en Latinoamérica.
+          </p>
+          <div class="tag-list">
+            <span class="tag">CEO</span>
+            <span class="tag">CFO</span>
+            <span class="tag">Investment Director</span>
+            <span class="tag">Legal & Compliance Officer</span>
+          </div>
+        </article>
+
+        <article class="card" id="buyer-2">
+          <span class="number">02</span>
+          <h3>Empresa y PyMEs Exportadoras</h3>
+          <p class="meta">
+            Empresas latinoamericanas interesadas en exportar, abrir mercados, fortalecer su operación internacional y comprender requisitos regulatorios, comerciales y operativos de forma clara, práctica y aplicable.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Exportación</span>
+            <span class="tag">Market Entry</span>
+            <span class="tag">Crecimiento empresarial</span>
+            <span class="tag">Comercio exterior</span>
+          </div>
+        </article>
+
+        <article class="card" id="buyer-3">
+          <span class="number">03</span>
+          <h3>Aliados y Ecosistema Estratégico</h3>
+          <p class="meta">
+            Cámaras de comercio, agencias de promoción de inversiones, entidades gubernamentales, organismos multilaterales, universidades, gremios empresariales y consultoras aliadas vinculadas a cooperación, internacionalización y desarrollo empresarial.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Cooperación</span>
+            <span class="tag">Articulación</span>
+            <span class="tag">Alianzas estratégicas</span>
+            <span class="tag">Institucionalidad</span>
+          </div>
+        </article>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Perfil</th>
+            <th>Objetivos principales</th>
+            <th>Necesidades comunicacionales</th>
+            <th>Tono esperado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inversionista Europeo Estratégico</td>
+            <td>Evaluar oportunidades de inversión, reducir riesgos regulatorios, fiscales y operativos, identificar aliados confiables y comprender dinámicas regionales.</td>
+            <td>Información estructurada, verificable, ejecutiva, bilingüe, precisa y alineada con estándares internacionales.</td>
+            <td>Formal, ejecutivo, estratégico, consultivo, basado en evidencia y orientado a resultados.</td>
+          </tr>
+          <tr>
+            <td>Empresa y PyMEs Exportadoras</td>
+            <td>Expandirse internacionalmente, abrir mercados, fortalecer preparación exportadora y tomar decisiones empresariales con mayor claridad.</td>
+            <td>Claridad práctica, acompañamiento, orientación a soluciones, lenguaje comprensible y aplicabilidad operativa.</td>
+            <td>Profesional, cercano, estratégico, consultivo y orientado a la acción.</td>
+          </tr>
+          <tr>
+            <td>Aliados y Ecosistema Estratégico</td>
+            <td>Fortalecer ecosistemas empresariales, desarrollar alianzas, promover cooperación internacional y generar articulación público-privada.</td>
+            <td>Formalidad, alineación institucional, documentación estructurada, visión de largo plazo y mensajes de representación organizacional.</td>
+            <td>Protocolar, colaborativo, estratégico, diplomático y respetuoso de jerarquías institucionales.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Perfil</th>
+            <th>Expectativas frente a la organización</th>
+            <th>Pain points</th>
+            <th>Riesgos comunicacionales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inversionista Europeo Estratégico</td>
+            <td>Solidez, internacionalización, orientación al compliance, interlocución ejecutiva multicultural y profesionalismo comunicacional.</td>
+            <td>Percepción de riesgo regional, exceso de información poco estructurada, traducciones literales, informalidad y ambigüedad regulatoria.</td>
+            <td>Lenguaje promocional, falta de datos verificables, mensajes extensos sin síntesis y traducciones sin adaptación cultural.</td>
+          </tr>
+          <tr>
+            <td>Empresa y PyMEs Exportadoras</td>
+            <td>Acompañamiento estratégico, claridad operativa, comprensión de requisitos internacionales y orientación práctica.</td>
+            <td>Complejidad regulatoria, desconocimiento de mercados, mensajes demasiado técnicos y falta de claridad sobre próximos pasos.</td>
+            <td>Tecnicismos innecesarios, promesas absolutas, lenguaje jurídico complejo y mensajes demasiado institucionales.</td>
+          </tr>
+          <tr>
+            <td>Aliados y Ecosistema Estratégico</td>
+            <td>Trayectoria, reputación, capacidad colaborativa, representación corporativa y relaciones sostenibles.</td>
+            <td>Falta de claridad en objetivos de cooperación, exceso de enfoque comercial, comunicación inconsistente y ausencia de seguimiento.</td>
+            <td>Mensajes ambiguos, lenguaje poco diplomático, informalidad y comunicación centrada en beneficios comerciales inmediatos.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="modulo-ii">
+      <div class="section-head">
+        <div class="module-label">Módulo II</div>
+        <div>
+          <h2>Narrativa Institucional Estratégica</h2>
+          <p class="lead">
+            La narrativa institucional es el corazón de la comunicación organizacional: establece quiénes somos, qué ofrecemos y por qué importa.
+          </p>
+        </div>
+      </div>
+
+      <h3>Narrativa matriz institucional (SP)</h3>
+      <div class="quote">
+        En CAPFISCAL CONSULTING LATAM e INCANEXO conectamos Europa y Latinoamérica mediante estrategias de inversión, internacionalización, comercio exterior y articulación empresarial alineadas con estándares internacionales y visión regulatoria.
+      
+      <p>
+        Acompañamos a empresas, inversionistas y actores institucionales en procesos de expansión, cumplimiento normativo y desarrollo empresarial, integrando análisis estratégico, rigurosidad técnica y comprensión intercultural para facilitar la toma de decisiones y la apertura de nuevos mercados.
+      </p>
+      <p>
+        Nuestra propuesta de valor se fundamenta en la confianza, el conocimiento especializado y la capacidad de transformar escenarios complejos en oportunidades de crecimiento, cooperación e internacionalización sostenible.
+      </p>
+      </div>
+
+      <h3>Institutional Core Narrative (EN)</h3>
+      <div class="quote">
+        At CAPFISCAL CONSULTING LATAM and INCANEXO, we connect Europe and Latin America through investment, internationalization, foreign trade, and business development strategies aligned with international standards and a strong regulatory perspective.      
+      <p>
+     We support companies, investors, and institutional stakeholders in expansion, regulatory compliance, and business growth processes by combining strategic analysis, technical expertise, and intercultural understanding to facilitate informed decision-making and access to new markets.
+      </p>
+      <p>
+      Our value proposition is built on trust, specialized knowledge, and the ability to transform complex scenarios into opportunities for growth, cooperation, and sustainable internationalization.
+      </p>
+      </div>
+      
+      <table>
+        <thead>
+          <tr>
+            <th>Institutional Core Narrative — Short Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              At CAPFISCAL CONSULTING LATAM and INCANEXO, we connect Europe and Latin America through investment, internationalization, foreign trade, and business development strategies.
+
+We support companies, investors, and institutional stakeholders in navigating expansion, regulatory compliance, and market entry by combining strategic expertise, regulatory insight, and intercultural understanding.
+
+Built on trust and specialized knowledge, we help transform complex challenges into sustainable opportunities for growth, cooperation, and international development.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </section>
+
+    <section id="adaptacion">
+      <div class="section-head">
+        <div class="module-label">Adaptación por audiencia</div>
+        <div>
+          <h2>Una narrativa institucional, tres enfoques comunicacionales</h2>
+          <p class="lead">
+            Cada audiencia requiere una adaptación específica de lenguaje, énfasis narrativo y nivel técnico, sin perder coherencia institucional.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Inversionista Europeo Estratégico</h3>
+          <p>La narrativa debe responder a una audiencia técnica y estratégica, acostumbrada a procesos de análisis, evaluación comparativa y toma de decisiones basadas en evidencia.</p>
+          <h4>Enfoque prioritario</h4>
+          <ul>
+            <li>Claridad regulatoria.</li>
+            <li>Cumplimiento normativo.</li>
+            <li>Análisis estratégico.</li>
+            <li>Reducción de incertidumbre.</li>
+            <li>Capacidad de articulación internacional.</li>
+          </ul><br>
+          <p>Este perfil consume lenguaje corporativo internacional, está familiarizado con terminología financiera/global y espera una comunicación técnica, sobria y respaldada por evidencia. Evitar sobrepromesas, clichés comerciales y frases emocionales sin soporte.</p>
+          <div class="tag-list">
+            <span class="tag">Strategic investment</span>
+            <span class="tag">Regulatory clarity</span>
+            <span class="tag">Compliance</span>
+            <span class="tag">Risk analysis</span>
+            <span class="tag">Market entry strategy</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Empresa y PyMEs Exportadoras</h3>
+          <p>La narrativa debe transmitir acompañamiento, claridad y capacidad técnica, evitando exceso de tecnicismos o enfoques excesivamente institucionales.</p>
+          <h4>Enfoque prioritario</h4>
+          <ul>
+            <li>Claridad y practicidad.</li>
+            <li>Acompañamiento estratégico.</li>
+            <li>Orientación a soluciones.</li>
+            <li>Crecimiento empresarial.</li>
+            <li>Comprensión sencilla de escenarios internacionales.</li>
+          </ul><br>
+          <p>Las adaptaciones en inglés deberán mantener equivalencia conceptual y lenguaje corporativo comprensible para escenarios de comercio internacional e internacionalización empresarial.</p>
+          <div class="tag-list">
+            <span class="tag">International expansion</span>
+            <span class="tag">Export processes</span>
+            <span class="tag">Trade opportunities</span>
+            <span class="tag">Practical guidance</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Aliados y Ecosistema Estratégico</h3>
+          <p>La narrativa debe proyectar credibilidad institucional, visión estratégica y capacidad de articulación entre actores públicos, privados y académicos.</p>
+          <h4>Enfoque prioritario</h4>
+          <ul>
+            <li>Cooperación institucional.</li>
+            <li>Articulación estratégica.</li>
+            <li>Generación de alianzas.</li>
+            <li>Intercambio de conocimiento.</li>
+            <li>Relaciones sostenibles de largo plazo.</li>
+          </ul><br>
+          <p>Las adaptaciones en inglés deberán mantener un tono institucional y diplomático alineado con contextos de cooperación internacional y relacionamiento corporativo.</p>
+          <div class="tag-list">
+            <span class="tag">Institutional cooperation</span>
+            <span class="tag">Strategic alliances</span>
+            <span class="tag">Business ecosystems</span>
+            <span class="tag">Regional integration</span>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="block-title">Frases no recomendadas y alternativas</h3>
+      <div class="card soft">
+          <h4>Regla de oro</h4>
+          <ul>
+            <li>Si estás prometiendo resultados ("best", "guarantee", "increase sales", "fast growth"), probablemente suene comercial.</li>
+            <li>Si estás describiendo capacidades ("support", "facilitate", "enable", "navigate", "strengthen"), sonará más profesional, creíble e internacional.</li>
+            <li>Fórmula práctica <b>Action Verb + Business Objective + Methodology/Expertise</b></li>
+          </ul>
+        </div>
+      <table>
+        <thead>
+          <tr>
+            <th>No recomendado</th>
+            <th>Qué está mal</th>
+            <th>Recomendado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>“Tenemos las mejores oportunidades de inversión en Latinoamérica.”<br><br>
+                 "We offer the best investment opportunities in Latin America."
+            </td>
+            <td>Suena exagerado y promocional; no aporta respaldo técnico.</td>
+            <td>“Identificamos oportunidades de inversión alineadas con escenarios regulatorios y dinámicas de mercado regionales.”<br><br>
+                "We support investors in identifying and evaluating opportunities across Latin America through strategic analysis, regulatory expertise, and local market insight."
+
+            </td>
+          </tr>
+          <tr>
+            <td>“Le ayudamos a crecer su negocio rápidamente.” <br><br>
+                 "We help your business grow quickly"
+            </td>
+            <td>Es una promesa genérica y poco estratégica.</td>
+            <td>
+              “Acompañamos procesos de expansión internacional mediante estrategias estructuradas y análisis técnico especializado.”<br><br>
+              “We support companies in achieving sustainable growth through international expansion, strategic advisory, and cross-border business development."
+            </td>
+          </tr>
+          <tr>
+            <td>“Tenemos la mejor solución para exportar.”<br><br>
+                “We have the best solution for exporting."
+            </td>
+            <td>Es promocional y poco creíble.</td>
+            <td>“Acompañamos procesos de exportación con enfoque práctico y visión internacional.”<br><br>
+                "We support export development initiatives through strategic guidance, regulatory expertise, and international market knowledge."
+            </td>
+          </tr>
+          <tr>
+            <td>“La alianza permitirá captar más clientes y aumentar ventas.”<br><br>
+               "The partnership will attract more clients and increase sales."
+
+            </td>
+            <td>Tiene un enfoque demasiado comercial para una relación institucional.</td>
+            <td>“La alianza busca fortalecer espacios de cooperación e integración empresarial.”<br><br>
+                "The partnership aims to strengthen cooperation between stakeholders, facilitate knowledge exchange, and support sustainable international business development."
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+     <h3 class="block-title">Adaptación de la narrativa matriz institucional (ES) </h3>
+      <div class="grid-3">
+         <article class="card">
+          <h3>Inversionista Europeo Estratégico</h3>
+          <p>
+            En CAPFISCAL CONSULTING LATAM e INCANEXO facilitamos conexiones estratégicas entre Europa y Latinoamérica mediante soluciones de inversión, internacionalización y comercio exterior alineadas con estándares internacionales y visión regulatoria.
+          </p>
+          <p>
+            Acompañamos a inversionistas, empresas y actores institucionales en la evaluación de oportunidades, estructuración de estrategias de entrada y desarrollo de operaciones internacionales, integrando análisis estratégico, compliance y conocimiento especializado de los entornos regulatorios y empresariales de ambas regiones.
+          </p>
+          <p>
+            Nuestro enfoque combina rigurosidad técnica, transparencia y comprensión intercultural para transformar escenarios complejos en oportunidades sostenibles de inversión y expansión empresarial.
+          </p>
+         </article>
+
+         <article class="card">
+          <h3>Empresa y PyMEs Exportadoras</h3>
+          <p>
+            En CAPFISCAL CONSULTING LATAM e INCANEXO acompañamos a empresas latinoamericanas en procesos de expansión internacional, comercio exterior e ingreso a nuevos mercados mediante estrategias claras, prácticas y alineadas con estándares internacionales.
+          </p>
+          <p>
+            Integramos análisis estratégico, cumplimiento normativo y conocimiento operativo para ayudar a las organizaciones a comprender escenarios regulatorios, fortalecer su estructura empresarial y desarrollar procesos de internacionalización sostenibles.
+          </p>
+          <p>
+            Nuestro enfoque transforma la complejidad del comercio internacional en acciones concretas, facilitando la toma de decisiones y el crecimiento empresarial en escenarios globales.
+          </p>
+         </article>
+
+         <article class="card">
+          <h3>Aliados y Ecosistema Estratégico</h3>
+          <p>
+            En CAPFISCAL CONSULTING LATAM e INCANEXO impulsamos conexiones estratégicas entre Europa y Latinoamérica mediante iniciativas de cooperación, internacionalización y desarrollo empresarial.
+          </p>
+          <p>
+            Trabajamos junto a cámaras de comercio, agencias de inversión, organismos multilaterales, universidades y entidades institucionales para facilitar espacios de articulación, intercambio de conocimiento y generación de iniciativas de impacto regional.
+          </p>
+          <p>
+            Nuestro enfoque integra visión estratégica, conocimiento técnico y comprensión intercultural para fortalecer relaciones sostenibles y ecosistemas empresariales orientados a inversión, cooperación y desarrollo internacional.
+          </p>
+        </article>
+      </div>
+
+      <h3 class="block-title">Institutional Core Narrative Adaptation (EN) </h3>
+       <div class="grid-3">
+         <article class="card">
+          <h3>Strategic European Investor</h3>
+          <p>
+           At CAPFISCAL CONSULTING LATAM and INCANEXO, we facilitate strategic connections between Europe and Latin America through investment, internationalization, and international trade solutions grounded in regulatory insight and international best practices.
+          </p>
+          <p>
+          We support investors, companies, and institutional stakeholders in evaluating opportunities, developing market entry strategies, and structuring cross-border operations. Our approach integrates strategic analysis, regulatory compliance, and specialized knowledge of the business and regulatory environments across both regions.
+          </p>
+          <p>
+         By combining technical expertise, transparency, and intercultural understanding, we help transform complex market dynamics into sustainable opportunities for investment, business expansion, and long-term value creation.
+          </p>
+         </article>
+
+         <article class="card">
+          <h3>Export-Oriented Companies and PyMEs (SMEs)</h3>
+          <p>
+            At CAPFISCAL CONSULTING LATAM and INCANEXO, we support Latin American companies in their international expansion, foreign trade, and market entry initiatives through practical, structured, and internationally aligned strategies.         
+           </p>
+          <p>
+         We combine strategic advisory, regulatory compliance, and operational expertise to help organizations navigate complex regulatory environments, strengthen their business capabilities, and develop sustainable internationalization processes.
+          </p>
+          <p>
+         Our approach translates the complexities of international trade into actionable strategies, enabling informed decision-making and supporting long-term business growth in global markets.
+          </p>
+         </article>
+
+         <article class="card">
+          <h3>Strategic Partners and Institutional Ecosystem</h3>
+          <p>
+          At CAPFISCAL CONSULTING LATAM and INCANEXO, we foster strategic connections between Europe and Latin America through initiatives focused on cooperation, internationalization, and business development.
+          </p>
+          <p>
+          We collaborate with chambers of commerce, investment promotion agencies, multilateral organizations, universities, and institutional stakeholders to facilitate collaboration, knowledge exchange, and the development of initiatives that contribute to regional growth and international engagement.
+          </p>
+          <p>
+         Our approach combines strategic vision, technical expertise, and intercultural understanding to strengthen long-term partnerships and business ecosystems that support investment, cooperation, and sustainable international development.
+          </p>
+        </article>
+      </div>
+
+
+
+    </section>
+
+    <section id="modulo-iii">
+      <div class="section-head">
+        <div class="module-label">Módulo III</div>
+        <div>
+          <h2>Lineamientos de Comunicación por Canal</h2>
+          <p class="lead">
+            Los lineamientos de comunicación externa estandarizan la forma en que CAPFISCAL CONSULTING LATAM e INCANEXO se comunican con sus audiencias estratégicas en distintos canales y contextos internacionales.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <h3>Correo Corporativo</h3>
+          <p>Canal orientado a establecer comunicación profesional, clara y estructurada con clientes, inversionistas, aliados institucionales y actores estratégicos.</p>
+          <h4>Características</h4>
+          <ul>
+            <li>Formalidad media-alta.</li>
+            <li>Claridad y síntesis.</li>
+            <li>Enfoque estratégico.</li>
+            <li>Respuesta estructurada.</li>
+            <li>Adaptación según audiencia.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Redes sociales y LinkedIn</h3>
+          <p>Canal para fortalecer posicionamiento institucional, proyectar conocimiento estratégico y generar relacionamiento con audiencias internacionales.</p>
+          <h4>Características</h4>
+          <ul>
+            <li>Comunicación estratégica y sintetizada.</li>
+            <li>Enfoque informativo y consultivo.</li>
+            <li>Lenguaje profesional.</li>
+            <li>Alto componente visual y narrativo.</li>
+            <li>Adaptación multicultural.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Propuestas Comerciales e Institucionales</h3>
+          <p>Canal para presentar soluciones, iniciativas o escenarios de cooperación de manera estructurada, estratégica y alineada con cada audiencia.</p>
+          <h4>Características</h4>
+          <ul>
+            <li>Alta formalidad.</li>
+            <li>Lenguaje técnico-estructurado.</li>
+            <li>Enfoque consultivo.</li>
+            <li>Claridad conceptual.</li>
+            <li>Orientación estratégica.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="block-title">Estructura recomendada por canal</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Canal</th>
+            <th>Estructura recomendada</th>
+            <th>Tono recomendado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Correo corporativo</td>
+            <td>Saludo profesional, contexto breve, objetivo principal, información clave, próximo paso y firma institucional.</td>
+            <td>Ejecutivo para inversionistas, profesional y cercano para empresas, institucional y diplomático para aliados.</td>
+          </tr>
+          <tr>
+            <td>Redes sociales y LinkedIn</td>
+            <td>Idea central, contexto estratégico, análisis breve, valor para la audiencia y CTA claro.</td>
+            <td>Ejecutivo, estratégico y corporativo en LinkedIn; profesional, cercano y educativo en Instagram.</td>
+          </tr>
+          <tr>
+            <td>Propuestas comerciales e institucionales</td>
+            <td>Introducción institucional, contexto, necesidad identificada, propuesta de valor, alcance, beneficios y próximos pasos.</td>
+            <td>Ejecutivo y técnico para inversionistas, estratégico y práctico para empresas, diplomático y colaborativo para instituciones.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 class="block-title">Ejemplos modelo de correo corporativo </h3>
+      <div class="grid-2">
+        <div class="email-box"><b> Para Inversionista Europeo Estratégico</b><br>
+           ASUNTO: Strategic investment opportunities in Latin America
+
+Dear Mr. Pierre,
+
+I hope this message finds you well.
+
+At INCANEXO, we are currently identifying strategic investment opportunities in Latin America aligned with international expansion, regulatory compliance, and sustainable growth trends.
+
+Considering your interest in regional diversification strategies, we would welcome the opportunity to share a brief market overview focused on energy, technology, and business development sectors.
+
+Please let us know if you would be available for a short introductory meeting next week.
+
+Kind regards,
+
+<Name Surname> Name Surname
+<Position>Position
+CAPFISCAL CONSULTING LATAM | INCANEXO
+📍 France – Lima – Europe/LatAm
+✉ contact@capfiscalconsulting.fr
+🌐 www.capfiscalconsultinglatam.com | www.incanexo.com
+🔗 LinkedIn</div>
+
+        <div class="email-box">
+          <b> Para Empresa y PyMEs Exportadoras</b><br>
+          ASUNTO: Estrategias para fortalecer su proceso de internacionalización
+
+Estimado equipo,
+
+Esperamos que se encuentren muy bien.
+
+Desde CAPFISCAL CONSULTING LATAM e INCANEXO acompañamos a empresas latinoamericanas en procesos de expansión internacional y comercio exterior mediante estrategias prácticas y alineadas con mercados internacionales.
+
+Con base en el perfil de su organización, identificamos oportunidades relacionadas con preparación exportadora, análisis de mercados y fortalecimiento operativo para procesos de internacionalización.
+
+Quedamos atentos para coordinar una reunión de diagnóstico inicial.
+
+Cordialmente,
+
+<Name Surname> Nombre
+<Position>Cargo
+CAPFISCAL CONSULTING LATAM | INCANEXO
+📍 France – Lima – Europe/LatAm
+✉ contact@capfiscalconsulting.fr
+🌐 www.capfiscalconsultinglatam.com  | www.incanexo.com
+🔗  LinkedIn</div>
+      </div>
+
+      <div class="grid-2" style="margin-top:1.5rem;">
+        <div class="email-box">
+          <b> Para Aliados y Ecosistema Estratégico</b><br>
+          ASUNTO: Espacios de cooperación y articulación institucional Europa–Latinoamérica
+
+Estimado Dr. Martínez,
+
+Reciba un cordial saludo.
+
+Desde CAPFISCAL CONSULTING LATAM e INCANEXO impulsamos iniciativas orientadas a fortalecer la cooperación empresarial e institucional entre Europa y Latinoamérica.
+
+En este contexto, consideramos que existen oportunidades de articulación relacionadas con internacionalización, intercambio de conocimiento y generación de espacios colaborativos entre actores empresariales y académicos.
+
+Nos gustaría coordinar un espacio de conversación para explorar posibles líneas de cooperación entre ambas organizaciones.
+
+Cordialmente,
+
+<Name Surname> Nombre
+<Position>Cargo
+CAPFISCAL CONSULTING LATAM | INCANEXO
+📍 France – Lima – Europe/LatAm
+✉ contact@capfiscalconsulting.fr
+🌐 www.capfiscalconsultinglatam.com | www.incanexo.com
+🔗 LinkedIn</div>
+
+        <div class="card soft">
+          <h4>Regla editorial</h4>
+          <p>El mensaje debe construir confianza antes que vender. La comunicación institucional debe priorizar claridad, contexto, valor estratégico y próximo paso concreto.</p>
+          <ul>
+            <li>Evitar frases como “somos los mejores”, “garantizamos éxito” o “nos encargamos de todo”.</li>
+            <li>Preferir expresiones basadas en evidencia, acompañamiento técnico y visión internacional.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="block-title">CTA recomendados por audiencia</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Audiencia</th>
+            <th>Características del CTA</th>
+            <th>Ejemplos recomendados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Inversionista Europeo Estratégico</td>
+            <td>Ejecutivo, consultivo, orientado a análisis, conversación estratégica, confianza y visión internacional.</td>
+            <td><ul>
+                  <li>Schedule a strategic discussion on regional expansion opportunities.</li>
+                  <li>Request an executive market overview.</li>
+                  <li>Explore investment and regulatory opportunities across the region.</li>
+              </ul>
+
+          </tr>
+          <tr>
+            <td>Empresa y PyMEs Exportadoras</td>
+            <td>Cercano, estratégico, orientado a acompañamiento, claridad y soluciones prácticas.</td>
+            <td>
+              <ul>
+                   <li>Agendemos un diagnóstico estratégico de internacionalización.</li>
+                  <li>Conozca oportunidades para fortalecer su expansión internacional.</li>
+                  <li>Fortalezca su preparación exportadora con acompañamiento especializado.</li> 
+                  <li>Discuss your export and international expansion objectives with our team.</li>
+                  <li>Request a market entry assessment for your target market.</li>
+                  <li>Explore international trade opportunities aligned with your business goals.</li>
+              </ul>
+            </td>
+          <tr>
+            <td>Aliados y Ecosistema Estratégico</td>
+            <td>Diplomático, colaborativo, institucional y orientado a cooperación y articulación.</td>
+            <td>
+                 <ul>
+                    <li>Exploremos oportunidades de cooperación y desarrollo conjunto.</li>
+                    <li>Conversemos sobre iniciativas de impacto e integración internacional.</li>
+                    <li>Fortalezcamos espacios de articulación y colaboración estratégica.</li>
+                    <li>Explore opportunities for cooperation and joint development.</li>
+                    <li>Discuss initiatives that support international engagement and regional impact.</li>
+                    <li>Strengthen strategic collaboration and institutional partnerships.</li>
+                </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+      <section id="propuestas">
+      <div class="section-head">
+        <span class="module-label">Propuestas comerciales e institucionales</span>
+        <div>
+          <h2>Aspectos para tener en cuenta</h2>
+          <p class="lead">
+            Las propuestas deben presentar soluciones, iniciativas o escenarios de cooperación de manera estructurada, estratégica y alineada con las necesidades de cada audiencia.
+          </p>
+        </div>
+      </div>
+
+      <div class="proposal-grid">
+        <article class="proposal-card">
+          <h4>Inversionista Europeo Estratégico</h4>
+          <span class="mini-title">Debe comprender</span>
+          <ul>
+            <li>Riesgos.</li>
+            <li>Oportunidades.</li>
+            <li>Contexto regulatorio.</li>
+            <li>Viabilidad estratégica.</li>
+          </ul>
+
+          <span class="mini-title">Se recomienda</span>
+          <ul>
+            <li>Inglés corporativo natural.</li>
+            <li>Terminología internacional.</li>
+            <li>Síntesis ejecutiva.</li>
+            <li>Redacción basada en evidencia.</li>
+          </ul>
+
+          <span class="mini-title">Evitar</span>
+          <ul>
+            <li>Exceso de adjetivos.</li>
+            <li>Frases emocionales.</li>
+            <li>Lenguaje promocional.</li>
+          </ul>
+
+          <span class="mini-title">La propuesta debe reflejar</span>
+          <ul>
+            <li>Compliance.</li>
+            <li>Estructuración estratégica.</li>
+            <li>Análisis de riesgos.</li>
+            <li>Conocimiento operativo internacional.</li>
+          </ul>
+        </article>
+
+        <article class="proposal-card">
+          <h4>Empresa y PyMEs Exportadoras</h4>
+          <span class="mini-title">Debe comprender</span>
+          <ul>
+            <li>Qué se hará.</li>
+            <li>Cómo se hará.</li>
+            <li>Cómo impactará su operación.</li>
+          </ul>
+
+          <span class="mini-title">Se recomienda</span>
+          <ul>
+            <li>Explicar términos regulatorios.</li>
+            <li>Reducir tecnicismos innecesarios.</li>
+            <li>Mantener un enfoque práctico y consultivo.</li>
+          </ul>
+
+          <span class="mini-title">La propuesta debe relacionarse con</span>
+          <ul>
+            <li>Exportación.</li>
+            <li>Crecimiento empresarial.</li>
+            <li>Apertura de mercados.</li>
+            <li>Fortalecimiento operativo.</li>
+            <li>Oportunidades comerciales.</li>
+          </ul>
+        </article>
+
+        <article class="proposal-card">
+          <h4>Aliados y Ecosistema Estratégico</h4>
+          <span class="mini-title">Debe reflejar</span>
+          <ul>
+            <li>Capacidad de articulación.</li>
+            <li>Visión estratégica.</li>
+            <li>Experiencia internacional.</li>
+            <li>Capacidad de representación institucional.</li>
+          </ul>
+
+          <span class="mini-title">Se recomienda</span>
+          <ul>
+            <li>Formalidad.</li>
+            <li>Estructura clara.</li>
+            <li>Redacción diplomática.</li>
+            <li>Lenguaje institucional.</li>
+          </ul>
+
+          <span class="mini-title">Es importante destacar</span>
+          <ul>
+            <li>Impacto regional.</li>
+            <li>Internacionalización.</li>
+            <li>Desarrollo empresarial.</li>
+            <li>Cooperación Europa–Latinoamérica.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="glosario">
+      <div class="section-head">
+        <div class="module-label">Glosario estratégico</div>
+        <div>
+          <h2>Terminología institucional en español e inglés</h2>
+          <p class="lead">
+            El glosario estandariza el uso de terminología estratégica para garantizar coherencia conceptual, adaptación intercultural y consistencia comunicacional.
+          </p>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Término</th>
+            <th>Definición institucional</th>
+            <th>Equivalencia EN/ES</th>
+            <th>Uso recomendado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Compliance</td><td>Procesos orientados al cumplimiento normativo, regulatorio y ético en escenarios empresariales e internacionales.</td><td>Compliance / Cumplimiento normativo</td><td>Mantener preferiblemente en inglés en comunicación corporativa internacional.</td></tr>
+          <tr><td>Internationalization</td><td>Proceso de expansión empresarial hacia mercados internacionales.</td><td>Internationalization / Internacionalización</td><td>Utilizar en contextos corporativos y estratégicos.</td></tr>
+          <tr><td>Foreign Trade</td><td>Actividades relacionadas con importación, exportación e intercambio comercial internacional.</td><td>Foreign Trade / Comercio exterior</td><td>Utilizar en propuestas y comunicación institucional.</td></tr>
+          <tr><td>Market Entry</td><td>Estrategia de ingreso o expansión hacia un nuevo mercado internacional.</td><td>Market Entry / Entrada a mercado</td><td>Preferible en comunicación ejecutiva y estratégica.</td></tr>
+          <tr><td>Business Development</td><td>Desarrollo de oportunidades empresariales y crecimiento organizacional.</td><td>Business Development / Desarrollo empresarial</td><td>Usar en contextos corporativos e institucionales.</td></tr>
+          <tr><td>Strategic Investment</td><td>Inversión orientada a crecimiento sostenible y expansión empresarial.</td><td>Strategic Investment / Inversión estratégica</td><td>Utilizar en comunicación dirigida a inversionistas.</td></tr>
+          <tr><td>Regulatory Framework</td><td>Conjunto de normas y regulaciones aplicables a un sector o mercado.</td><td>Regulatory Framework / Marco regulatorio</td><td>Usar en escenarios técnicos y de compliance.</td></tr>
+          <tr><td>Risk Analysis</td><td>Evaluación estratégica de riesgos regulatorios, operativos o comerciales.</td><td>Risk Analysis / Análisis de riesgos</td><td>Recomendado para propuestas y escenarios de inversión.</td></tr>
+          <tr><td>Business Ecosystem</td><td>Red de actores empresariales, institucionales y comerciales que interactúan en un entorno económico.</td><td>Business Ecosystem / Ecosistema empresarial</td><td>Utilizar en narrativa institucional y cooperación.</td></tr>
+          <tr><td>Institutional Cooperation</td><td>Relación colaborativa entre organizaciones para el desarrollo de iniciativas conjuntas.</td><td>Institutional Cooperation / Cooperación institucional</td><td>Recomendado para alianzas y relacionamiento institucional.</td></tr>
+          <tr><td>Strategic Alliance</td><td>Relación de colaboración orientada al desarrollo de objetivos compartidos.</td><td>Strategic Alliance / Alianza estratégica</td><td>Utilizar en convenios, propuestas y networking institucional.</td></tr>
+          <tr><td>Cross-border Operations</td><td>Operaciones empresariales desarrolladas entre distintos países o regiones.</td><td>Cross-border Operations / Operaciones transfronterizas</td><td>Utilizar en comunicación internacional y corporativa.</td></tr>
+          <tr><td>International Standards</td><td>Normas, prácticas y criterios reconocidos globalmente.</td><td>International Standards / Estándares internacionales</td><td>Recomendado para propuestas y posicionamiento institucional.</td></tr>
+          <tr><td>Due Diligence</td><td>Proceso de análisis y validación previo a inversiones o alianzas estratégicas.</td><td>Due Diligence / Debida diligencia</td><td>Mantener preferiblemente en inglés en contextos corporativos internacionales.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+<section id="prompts">
+  <div class="section-head">
+    <span class="module-label">Plantillas de prompts</span>
+    <div>
+      <h2>Comunicación institucional asistida</h2>
+      <p class="lead">
+        Estas plantillas permiten generar, revisar, adaptar y optimizar comunicaciones institucionales manteniendo coherencia narrativa, claridad estratégica y adaptación intercultural.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid-2">
+
+    <div class="prompt-box">
+01 · PROMPT INVERSIONISTA EUROPEO
+
+Actúa de acuerdo con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO, orientada a conectar Europa y Latinoamérica mediante estrategias de inversión, internacionalización y comercio exterior alineadas con estándares internacionales y visión regulatoria.
+
+Redacta un [correo / propuesta / mensaje / presentación] dirigido a un inversionista europeo con tono ejecutivo, estratégico y consultivo.
+
+Objetivo del mensaje: [incluir objetivo].
+Sector de interés: [energía / tecnología / agroindustria / logística / otro].
+País o región objetivo: [incluir región].
+Servicios o enfoque estratégico: [incluir servicios].
+Resultado esperado: [reunión / presentación / llamada / propuesta].
+
+El contenido debe:
+• Transmitir claridad regulatoria y confianza.
+• Utilizar lenguaje corporativo internacional.
+• Proyectar capacidad técnica y visión estratégica.
+• Evitar frases promocionales o emocionales.
+• Mantener coherencia con escenarios internacionales de inversión.
+    </div>
+
+    <div class="prompt-box">
+02 · PROMPT EMPRESA LATINOAMERICANA
+
+Actúa de acuerdo con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO, orientada al acompañamiento estratégico de empresas latinoamericanas en procesos de internacionalización y expansión empresarial.
+
+Redacta un [correo / propuesta / mensaje / publicación] dirigido a una empresa interesada en expandirse internacionalmente.
+
+Tipo de empresa o sector: [incluir sector].
+Objetivo empresarial: [exportar / expandirse / abrir mercado].
+Mercado objetivo: [incluir mercado].
+Servicios o acompañamiento: [incluir servicios].
+Canal de comunicación: [correo / LinkedIn / propuesta].
+
+El contenido debe:
+• Utilizar tono profesional, cercano y estratégico.
+• Explicar conceptos complejos de forma clara.
+• Priorizar aplicabilidad y acompañamiento.
+• Transmitir crecimiento empresarial y visión internacional.
+• Evitar tecnicismos innecesarios.
+    </div>
+
+    <div class="prompt-box">
+03 · PROMPT DE COOPERACIÓN INSTITUCIONAL
+
+Actúa de acuerdo con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO, enfocada en fortalecer cooperación, articulación institucional y desarrollo empresarial entre Europa y Latinoamérica.
+
+Redacta un [correo / propuesta / mensaje / presentación] dirigido a [cámara de comercio / universidad / agencia de inversión / organismo multilateral].
+
+Objetivo del mensaje: [alianza / cooperación / networking / articulación].
+Tema principal: [incluir tema].
+Tipo de iniciativa: [académica / institucional / empresarial].
+Resultado esperado: [reunión / convenio / articulación].
+
+El contenido debe:
+• Utilizar tono diplomático y colaborativo.
+• Priorizar cooperación y valor compartido.
+• Proyectar credibilidad institucional.
+• Fortalecer articulación entre actores estratégicos.
+• Evitar enfoques excesivamente comerciales.
+    </div>
+
+    <div class="prompt-box">
+04 · LINKEDIN INSTITUCIONAL
+
+Redacta una publicación para LinkedIn alineada con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+Tema principal: [incluir tema].
+Audiencia objetivo: [inversionistas / empresas / aliados institucionales].
+Objetivo del post: [posicionamiento / análisis / networking].
+Enfoque estratégico: [compliance / inversión / comercio exterior / cooperación].
+
+El contenido debe:
+• Utilizar tono ejecutivo e institucional.
+• Incluir análisis o contexto estratégico.
+• Mantener claridad y síntesis.
+• Evitar frases promocionales o clichés.
+    </div>
+
+    <div class="prompt-box">
+05 · PROPUESTA COMERCIAL O INSTITUCIONAL
+
+Redacta un texto para una propuesta [comercial / institucional] alineada con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+Tipo de audiencia: [inversionista / empresa / aliado institucional].
+Objetivo de la propuesta: [incluir objetivo].
+Servicios o alcance: [incluir servicios].
+Contexto del cliente u organización: [incluir contexto].
+Resultado esperado: [expansión / cooperación / articulación].
+
+El texto debe:
+• Utilizar tono estratégico y consultivo.
+• Proyectar claridad y capacidad técnica.
+• Explicar valor agregado sin exageraciones.
+• Mantener coherencia con escenarios internacionales.
+    </div>
+
+    <div class="prompt-box">
+06 · REVISIÓN DE TONO
+
+Analiza el siguiente texto y verifica si mantiene un tono corporativo, estratégico e institucional alineado con una firma internacional de consultoría e internacionalización.
+
+Audiencia objetivo: [inversionista / empresa / aliado institucional].
+Canal de comunicación: [correo / LinkedIn / propuesta / presentación].
+
+Identifica:
+• Frases demasiado promocionales.
+• Expresiones ambiguas o poco profesionales.
+• Errores de tono.
+• Inconsistencias narrativas.
+• Oportunidades de mejora cultural.
+
+Propón una versión optimizada manteniendo coherencia institucional.
+    </div>
+
+    <div class="prompt-box">
+07 · TRADUCCIÓN CORPORATIVA
+
+Traduce el siguiente texto del español al inglés corporativo internacional manteniendo coherencia con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+La traducción debe:
+• Sonar natural en contextos empresariales internacionales.
+• Mantener tono estratégico e institucional.
+• Evitar traducciones literales.
+• Adaptar expresiones culturales.
+• Conservar claridad conceptual.
+
+Audiencia objetivo: [inversionista / empresa / aliado institucional].
+Canal: [correo / LinkedIn / propuesta / presentación].
+    </div>
+
+    <div class="prompt-box">
+08 · SIMPLIFICACIÓN TÉCNICA
+
+Reescribe el siguiente texto utilizando un lenguaje más claro, práctico y accesible, manteniendo coherencia con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+El contenido debe:
+• Conservar precisión conceptual.
+• Reducir tecnicismos innecesarios.
+• Facilitar comprensión para empresas en internacionalización.
+• Mantener tono profesional y estratégico.
+    </div>
+
+    <div class="prompt-box">
+09 · VALIDACIÓN CULTURAL
+
+Analiza el siguiente texto y verifica si es adecuado cultural y lingüísticamente para una audiencia de [Europa / Latinoamérica / entorno corporativo internacional].
+
+Identifica:
+• Expresiones poco naturales.
+• Traducciones literales.
+• Frases ambiguas.
+• Problemas de tono.
+• Oportunidades de adaptación intercultural.
+    </div>
+
+    <div class="prompt-box">
+10 · GENERACIÓN DE CTA INSTITUCIONAL
+
+Genera tres llamados a la acción (CTA) alineados con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO para un contenido relacionado con [tema].
+
+Los CTA deben:
+• Sonar estratégicos y profesionales.
+• Evitar presión comercial.
+• Proyectar acompañamiento y visión internacional.
+• Adaptarse a [LinkedIn / correo / propuesta / evento].
+    </div>
+
+    <div class="prompt-box">
+11 · GENERACIÓN DE INSIGHTS PARA LINKEDIN
+
+Genera un insight estratégico para LinkedIn relacionado con [tema], manteniendo coherencia con la narrativa institucional de CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+El contenido debe:
+• Utilizar tono ejecutivo e internacional.
+• Incluir análisis o contexto de mercado.
+• Priorizar claridad y síntesis.
+• Evitar frases genéricas o promocionales.
+    </div>
+
+    <div class="prompt-box">
+12 · CONVERSIÓN DE TEXTO COMERCIAL A INSTITUCIONAL
+
+Reescribe el siguiente texto para convertirlo en una comunicación más institucional, estratégica y alineada con la narrativa de CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+El nuevo texto debe:
+• Reducir lenguaje promocional.
+• Aumentar claridad y credibilidad.
+• Mantener enfoque consultivo.
+• Proyectar capacidad técnica e internacional.
+    </div>
+
+    <div class="prompt-box">
+13 · GENERACIÓN DE RESUMEN EJECUTIVO
+
+Genera un resumen ejecutivo del siguiente contenido manteniendo un tono estratégico, claro e institucional alineado con CAPFISCAL CONSULTING LATAM e INCANEXO.
+
+El resumen debe:
+• Priorizar información clave.
+• Mantener claridad conceptual.
+• Proyectar visión estratégica.
+• Evitar detalles innecesarios o lenguaje promocional.
+    </div>
+
+  </div>
+</section>
+
+    <section id="validacion">
+      <div class="section-head">
+        <div class="module-label">Validación y aprobación</div>
+        <div>
+          <h2>Criterios finales de revisión</h2>
+          <p class="lead">
+            Antes de publicar o enviar una comunicación externa, se debe verificar que el mensaje mantenga coherencia narrativa, claridad estratégica, adaptación intercultural y tono adecuado para la audiencia.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card soft">
+          <h4>Coherencia institucional</h4>
+          <p>El mensaje debe estar alineado con la narrativa matriz, el posicionamiento internacional y la identidad institucional de CAPFISCAL CONSULTING LATAM e INCANEXO.</p>
+        </div>
+        <div class="card soft">
+          <h4>Adaptación por audiencia</h4>
+          <p>El tono, el idioma, el nivel técnico y el enfoque narrativo deben responder al perfil del receptor: inversionista, empresa o aliado institucional.</p>
+        </div>
+        <div class="card soft">
+          <h4>Claridad y precisión</h4>
+          <p>La comunicación debe eliminar redundancias, evitar sobrepromesas, reducir ambigüedades y presentar un próximo paso claro.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer page">
+     <p>CAPFISCAL CONSULTING | INCANEXO</p>
+     <p><strong>Manual de Comunicación Organizacional Multilingüe e Intercultural </strong></p>
+      <p><strong>Realizado por:</strong> <a class="link-institutional" href="https://www.linkedin.com/in/dianatraslavina/">Diana Traslaviña</a></p>
+      <p><strong>Aprobado por:</strong> Rosa Angel Paz Vadillo</p>
+      <p><strong>Fecha de elaboración:</strong> Mayo 2026</p>
+     
+  </footer>
+</body>
+</html>
